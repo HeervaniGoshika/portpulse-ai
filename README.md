@@ -6,54 +6,6 @@ Built using **Python, Streamlit, and Machine Learning** with geospatial processi
 
 ---
 
-## ✨ Features
-
-- ⚓ **Port Congestion Analyzer**
-  - Detect ships waiting near ports
-  - Estimate congestion levels
-  - Visual traffic monitoring
-
-- 🧭 **Ship ETA Prediction**
-  - Predict arrival time using speed and distance features
-  - ML-based regression model
-
-- 🚨 **Collision Risk Detection**
-  - CPA / TCPA based collision analysis
-  - Velocity vector computation
-  - Real-time alert generation
-
-- 🌍 **Live Ship Visualization**
-  - Interactive Pydeck map
-  - Time-based ship movement simulation
-  - Vessel information tooltips
-
----
-
-## 🛠 Tech Stack
-
-- Python
-- Streamlit
-- Pandas & NumPy
-- Scikit-learn
-- Pydeck
-- SciPy (KDTree)
-- Haversine
-
----
-
-## 📁 Project Structure
-
-marine-intelligence-system/
-│
-├── data/
-├── src/
-├── streamlit_app/
-├── models/
-├── notebooks/
-└── utils/
-
----
-
 ## ▶️ Run the App
 
 ```bash
