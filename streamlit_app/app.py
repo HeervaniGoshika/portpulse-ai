@@ -1,13 +1,16 @@
 import sys
 import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+
+import streamlit as st
+import joblib
+
 
 # Add project root to path
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if PROJECT_ROOT not in sys.path:
     sys.path.append(PROJECT_ROOT)
 
-import streamlit as st
-import joblib
 
 # MUST be first Streamlit command
 st.set_page_config(page_title="Maritime Intelligence", layout="wide")
@@ -51,3 +54,4 @@ else:
     st.warning("ETA model not trained yet")
 
 st.write("Use sidebar to navigate")
+
