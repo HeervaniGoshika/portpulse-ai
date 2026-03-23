@@ -7,7 +7,9 @@ from src.collision_engine import detect_collisions
 from src.data_loader import load_ais_data
 from src.feature_engineering import add_velocity
 
-df = load_ais_data("data/processed/sample.csv")
+df = load_ais_data("data/processed/raw.csv")
+df = df[df["lon"] > 83.2]
+
 
 df = add_velocity(df)
 
